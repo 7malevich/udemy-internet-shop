@@ -1,0 +1,294 @@
+.filter
+   &__list 
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      letter-spacing: 0.09em
+      text-transform: uppercase
+      color: $silver-text
+      &--active
+         color: $accent-text
+   &__tabs
+      display: flex
+      flex-direction: column
+   &__list
+      &-title
+         font-weight: 600
+         font-size: 16px
+         line-height: 19px
+         padding-left: 25px
+      &-content
+         display: flex
+         flex-wrap: wrap   
+         &--radio
+            flex-wrap: nowrap
+      &-checkbox
+         font-size: 14px
+         font-weight: normal
+         line-height: 17px
+         width: 50%
+         margin-bottom: 20px
+      &-more 
+         display: flex  
+         flex-direction: column
+         align-items: center
+   &__btn 
+      border: none
+      background-color: $athens
+      margin-right: 10px
+      margin-bottom: 10px 
+      padding: 6px 15px
+      font-weight: bold
+      font-size: 12px
+      line-height: 14px
+      letter-spacing: 0.07em
+      color: $silver-text
+      outline: none
+      &--active
+         background-color: $accent 
+         color: $white-text      
+   &__dropdown
+      position: relative
+      margin-bottom: 19px
+      cursor: pointer
+      &::before
+         content: ''
+         background-image: url('../img/filter-arrow-top.svg')
+         position: absolute
+         width: 12px
+         height: 8px
+         top: 6px
+         transform: rotate(-180deg)
+         transition: all .25s
+         left: 0
+      &--active
+         &::before
+            transform: rotate(0deg)
+            transition: all .25s
+   &__slider-price
+      margin-top: -19px
+      padding-bottom: 40px
+   &__box
+      display: flex
+      justify-content: space-between
+      border-bottom: 1px solid $silver
+      padding-bottom: 5px
+      margin-bottom: 30px
+   &__select
+      outline: none
+      &-arrow
+         &::before
+            content: ''
+            position: absolute
+            top: 5px
+            left: 40px
+            width: 12px
+            height: 8px
+            background-image: url('../img/filter-arrow-top.svg')
+            transform: rotate(-180deg)
+      &--active
+         &::before
+            transform: rotate(0deg)
+   &__more
+      &-btn
+         font-weight: normal
+         font-size: 14px
+         line-height: 17px
+         text-decoration: underline
+         color: $accent
+         border: none
+         background-color: transparent
+         transform: translateY(-10px)
+   &__search
+   &__playcholder
+      padding: 8px 20px
+      background-color: transparent
+      border: 1px solid $athens
+      color: $accent-text
+      width: 100%
+      outline: none
+      font-weight: normal
+      font-size: 12px
+      line-height: 14px
+      margin-bottom: 20px
+   &__choose
+      padding: 17px 85px
+      font-weight: normal
+      font-size: 15px
+      line-height: 15px
+      letter-spacing: 0.12em
+      text-transform: uppercase
+      color: $silver-text
+      background-color: $athens
+      margin-top: 30px
+      margin-bottom: 15px
+      border: none
+   &__paramentrs
+      border: none
+      background-color: transparent
+      font-weight: normal
+      font-size: 13px
+      line-height: 16px
+      position: relative
+      padding-right: 25px
+      &::before
+         content: ''
+         position: absolute
+         top: 5px
+         right: 0
+         background-image: url('../img/filter-arrow-top.svg')
+         width: 12px
+         height: 8px
+         transform: rotate(-180deg)
+   
+   &__close
+      font-weight: normal
+      font-size: 13px
+      line-height: 16px
+      text-decoration: underline
+      color: #C4C4C4
+      border: none
+      background: transparent
+
+   
+      
+
+            
+
+
+
+
+      
+.jq-checkbox, .jq-radio
+   vertical-align: -2px
+   width: 14px
+   height: 14px
+   margin: 0 8px 0 0
+   border: 1px solid #C4C4C4
+   background: $white 
+   box-shadow: none
+   border-radius: 1px
+   &.checked
+      background-color: $accent
+      border: none
+      border-radius: none
+      & .jq-checkbox__div
+         background-image: url('../img/check.svg')
+         width: 8px
+         height: 6px
+         border-bottom: none
+         border-left: none
+         margin: 4px 0 0 3px
+         transform: rotate(0)
+      & .jq-radio__div
+         height: 0
+         width: 0
+         margin: 0
+         border-radius: 0
+         background: transparent 
+         box-shadow: none
+
+.irs-from, .irs-to
+   display: none
+
+.irs--flat .irs-handle
+   width: 7.38px
+   height: 7.38px
+   top: 55%
+   border-radius: 50%   
+   background: $accent
+   &>i:first-child
+      display: none
+
+.irs--flat .irs-line 
+   width: 100%
+   height: 1px
+   background-color: $silver
+
+.irs--flat .irs-bar
+   background-color: $accent
+   height: 3px
+   top: 24px
+
+.irs--flat .irs-max, .irs--flat .irs-min
+   top: 46px
+   padding: 0
+   text-shadow: none
+   color: $accent-text
+   background-color: transparent
+   visibility: visible !important
+   border-radius: 0
+   font-weight: normal
+   font-size: 14px
+   line-height: 17px
+   text-decoration: underline
+   //position: relative
+   padding-left: 27px
+.irs-max
+   &::before
+      content: 'до'
+      
+
+.irs-min
+   &::before
+      content: 'от'
+
+.irs-min, .irs-max
+   &::before
+      position: absolute
+      left: 0
+      top: 0
+      font-weight: normal
+      font-size: 14px
+      line-height: 17px
+      color: $silver-text
+
+.jq-selectbox__select
+   height: 25px
+   padding: 1px 25px 0 10px  
+   border: none
+   border-bottom-color: transparent
+   border-radius: 0
+   background: transparent
+   box-shadow: none
+   font-weight: normal
+   font-size: 14px
+   line-height: 17px
+   color: $accent-text
+   &:hover
+      background: transparent
+   &:active
+      box-shadow: none
+.jq-selectbox.focused .jq-selectbox__select
+   border: none
+
+.jq-selectbox__trigger
+   border-left: none
+   position: relative
+   &-arrow
+      border: none
+
+.jq-selectbox__dropdown 
+   width: 69px
+   padding: 0
+   box-shadow: none
+   border-radius: 0
+   background: $white
+   border: 1px solid $silver
+   margin: 0
+   top: 19px !important
+
+.jq-selectbox li 
+   min-height: 10px
+   padding: 4.5px 30px 4.5px 15px
+   color: rgba(0, 0, 0, 0.6)
+   &:first-child
+      margin-top: 7px
+   &:hover
+      background: $accent
+   &.selected
+      background: $accent
+//.jq-selectbox li.selected
+
+.jq-selectbox__select-text
+   text-align: right

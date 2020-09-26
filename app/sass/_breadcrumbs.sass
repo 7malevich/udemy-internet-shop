@@ -1,0 +1,28 @@
+.breadcrumbs
+   margin-bottom: 40px
+   &__item
+   &__list
+      display: inline-block
+      padding-right: 16px
+      margin-right: 10px
+      color: $silver-text
+      position: relative
+      &:last-child
+         &::after
+            display: none
+      &:after
+         content: ''
+         background-image: url('../img/back.svg')
+         z-index: 2
+         position: absolute
+         bottom: 6.5px
+         right: 0px
+         width: 6px
+         height: 11px
+   &__link
+   &__text
+      font-weight: normal
+      font-size: 15px
+      line-height: 18px
+
+

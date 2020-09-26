@@ -1,0 +1,54 @@
+.tabs
+   display: flex
+   &-catigories
+      display: flex
+      &__list
+         font-weight: normal
+         font-size: 20px
+         line-height: 24px
+         padding: 11px 26px
+         cursor: pointer
+         margin-bottom: 25px
+         &--active
+            background-color: $athens
+            border-radius: 5px
+            font-weight: 600
+
+.selection
+   display: flex
+   flex-direction: column
+		
+.search
+   margin-bottom: 150px
+   &__form
+      min-height: 50px
+      background: #ffffff
+      display: flex
+   &__btn
+      padding: 17px 38px 16px 40px
+      background-color: $accent
+      font-size: 14px
+      line-height: 17px
+      letter-spacing: 0.12em
+      text-transform: uppercase
+      color: $white-text
+      border: none
+      cursor: pointer
+   &__placeholder
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      width: 100%
+      padding: 15px 20px 
+      border: none
+      background-color: transparent
+      color: $accent-text
+      border-radius: 3px
+      &:placeholder
+         color: #656464
+
+.tab
+   display: none
+   &.tab--active
+      display: block
+      animation: tab linear .7s forwards

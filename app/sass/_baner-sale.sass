@@ -1,0 +1,120 @@
+.baner
+   &-sale
+      display: flex
+      &__box
+         flex: 1 0 870px
+         width: 870px
+         position: relative
+         margin-right: 36px
+      &__sale-info
+         max-width: 265px
+         max-height: 400px
+         text-align: center
+         position: relative
+         border: 1px solid #CDCDCD
+			// box-sizing: border-box
+         border-radius: 3px
+      &__top
+         display: flex
+         justify-content: space-between
+         align-items: flex-start
+      &__stock
+         font-size: 12px
+         line-height: 15px
+         letter-spacing: 0.1em
+         text-transform: uppercase
+         padding: 8px 20px
+			// height: auto 
+         background-color: $accent
+         color: $white-text
+      &__price
+         padding-top: 3px
+         &-current 
+            font-weight: bold
+            font-size: 27px
+            line-height: 32px
+            color: $blue-accent
+            padding-right: 7px
+            margin-bottom: 7px
+         &-old 
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            color: #C4C4C4
+            text-align: right
+            position: relative
+            margin-right: 4px
+            &::after
+               content: ''
+               width: 60px
+               height: 1px
+               background-color: #C4C4C4
+               position: absolute
+               top: 50%
+               right: 7px
+
+               transform: rotate(-11.33deg)
+				// background-image: url('../img/vector-price.svg')
+            &::after
+               content: ''
+      &__main
+         &-image
+            object-fit: contain
+      &__title
+         font-weight: bold
+			// width: 240px
+         font-size: 18px
+         line-height: 21px
+         padding: 0 29px
+      &__botton
+         display: flex
+         flex-direction: column
+         justify-content: space-between
+      &__text
+         font-weight: normal
+         font-size: 18px
+         line-height: 21px
+         position: absolute
+         bottom: 25px
+         right: 0
+         width: 100%
+      &__data
+         font-size: 18px
+         font-weight: bold
+         text-align: center
+         line-height: 22px
+         color: #1C62CD
+   &-top 
+      &__arrows
+         &--right
+            position: absolute
+            top: 176px
+            right: 0
+            padding: 5px 15px
+            cursor: pointer
+            z-index: 1
+         &--left
+            position: absolute
+            top: 176px
+            left: 0
+            padding: 5px 15px
+            cursor: pointer
+            z-index: 1
+         &-black
+            
+.slick-dots
+   position: absolute
+   left: 0
+   bottom: 18px
+   z-index: 3
+   & button 
+      padding: 0
+      font-size: 0
+      margin: 0
+      width: 11px
+      height: 11px
+      border: 1px solid #ffffff
+      border-radius: 50%
+   &li 
+      display: inline-block
+      padding: 0 5px

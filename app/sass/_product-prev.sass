@@ -1,0 +1,170 @@
+.product-prev
+   &__item
+      border: 1px solid $silver
+      border-radius: 3px
+      max-width: 270px
+      min-height: 400px
+      position: relative
+      text-align: center
+      margin: 0 15px
+      //margin-bottom: 30px
+      &:nth-child(4n+4)
+         //margin-right: 0
+         //padding-right: 30px
+         //tra
+         
+      
+      &:hover         
+         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+         border-radius: 3px
+         & .product-prev__price
+            color: $blue-accent
+         & .product-prev__title
+            color: $blue-accent
+         & .product-prev__hover
+            opacity: 1
+      &--sale
+         &::before
+            content: 'Акция'
+            font-weight: normal
+            font-size: 12px
+            line-height: 14px
+            letter-spacing: 0.07em
+            color: $white-text
+            padding: 6px 15px 8px
+            position: absolute
+            top: 0
+            left: 0
+            z-index: 1
+            background-color: $accent
+   &__hover
+      opacity: 0
+      display: inline-block
+      font-weight: normal
+      font-size: 20px
+      line-height: 24px
+      padding: 18px 22px
+      box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2)
+      background-color: rgba($white, .9)
+      text-align: center
+      z-index: 100
+      position: absolute
+      top: 30%
+      right: 20px
+      left: 20px
+      cursor: pointer
+      transition: all .3s ease
+   &__stock
+      font-weight: normal
+      font-size: 12px
+      line-height: 14px
+      letter-spacing: 0.07em
+      color: $white-text
+      padding: 6px 15px 8px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 1
+      background-color: $accent
+   &__photo
+      padding: 52px 11px 11px
+   &__title
+      font-weight: normal
+      font-size: 18px
+      line-height: 21px
+      margin: 0 27px
+      transition: all .3s
+   &__image
+      max-width: 100%
+      height: 200px
+      object-fit: contain
+   &__favorite
+      position: absolute
+      top: 16px
+      right: 20px
+      width: 24px
+      height: 22px
+      z-index: 10
+      border: none
+      cursor: pointer
+      background-color: transparent
+      outline: none
+      &::before
+         content: ''
+         position: absolute
+         background-image: url('../img/love.svg')
+         top: 0px
+         left: 0px
+         width: 24px
+         height: 22px
+         z-index: 5
+      &--active
+         &::before
+            content: ''
+            background-image: url('../img/love-bgc.svg')
+            background-repeat: no-repeat
+   &__price
+      font-family: Barlow
+      font-weight: bold
+      font-size: 30px
+      line-height: 36px
+      padding-top: 23px
+      display: inline-block
+      transition: all .3s
+   &__basket
+      position: absolute
+      bottom: 0
+      right: 0
+      z-index: 10
+      padding: 9px 15px 0
+      background-color: $accent
+      border-radius: 10px 0px 0px 0px
+      cursor: pointer
+      border: none
+      &-image
+         cursor: pointer
+         path 
+            fill: $white
+   &__availability
+      font-size: 18px
+      line-height: 21px
+      padding-top: 7px
+      display: none
+   &__entrance
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      color: $blue-accent
+      padding-bottom: 0.5px
+      border-bottom: 1px solid $accent
+      padding-top: 13px
+   &__more
+      text-align: center
+      padding-top: 35px
+      &-link
+         font-weight: normal
+         padding: 16px 43px
+         background: $athens
+         font-size: 15px
+         line-height: 18px
+         letter-spacing: 0.12em
+         text-transform: uppercase
+         display: inline-block   
+   &__botton.product-prev__not-availability
+      & .product-prev__availability
+         display: block
+   &__botton.product-prev__not-availability
+      & .product-prev__basket
+         display: none
+   &__botton.product-prev__not-availability
+      & .product-prev__price
+         display: none
+
+
+.container-hits
+   margin: 0 auto
+   max-width: 1200px
+   //padding: 0 15px
+   width: 100%
+
+

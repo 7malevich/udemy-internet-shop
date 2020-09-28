@@ -1,0 +1,76 @@
+.product-page
+   display: flex
+   justify-content: space-between
+   &__box-img
+      width: 500px
+      text-align: center
+   &__photo
+      padding-top: 52px
+      margin-bottom: 17px
+   &__image
+      height: 375px
+      width: 100%
+      object-fit: contain
+   &__box-descr
+      width: 570px
+   &__price
+      &-old
+         font-weight: normal
+         font-size: 30px
+         line-height: 36px
+         color: rgba($accent-text, .3)
+         margin-bottom: 6px
+         position: relative
+         display: inline-block
+         &::before
+            content: " "
+            display: inline-block
+            width: 100%
+            border-top: 1px solid $accent-text
+            height: 12px
+            position: absolute
+            bottom: 8px
+            left: 0
+            transform: rotate(-7deg)
+      &-new
+         font-weight: bold
+         font-size: 40px
+         line-height: 48px
+         margin-bottom: 17px
+      &-feedback
+         font-weight: normal
+         font-size: 15px
+         line-height: 18px
+         color: $blue-accent
+   &__title
+      font-weight: bold
+      font-size: 30px
+      line-height: 36px
+      margin-bottom: 10px
+   &__codetitle
+      font-weight: normal
+      font-size: 15px
+      line-height: 18px
+      color: rgba($accent-text, .6)
+      margin-bottom: 25px
+
+.characteristics
+   &__more
+      padding-top: 17px
+   &__content
+      font-weight: normal
+      font-size: 20px
+      line-height: 24px
+      color: $accent-text
+      margin-bottom: 17px
+      &-list
+         display: flex
+         justify-content: space-between
+         border-bottom: 1px solid rgba($accent-text, .3)
+         width: 436px
+         padding-bottom: 6px
+         margin-bottom: 15px      
+      &-title
+         width: 281px
+      &-inf
+         width: 125px

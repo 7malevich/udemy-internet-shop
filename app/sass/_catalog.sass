@@ -1,10 +1,9 @@
 .catalog
-   margin-bottom: 100px
+   margin-bottom: 50px
    &__item
    &__block
       display: flex
       justify-content: space-between
-      margin-bottom: 47px
    &__list
       display: inline-block
       margin-right: 8px
@@ -19,24 +18,51 @@
       background-color: $athens
    &__sample
       display: flex
+      align-items: center
    &__filter
-      //padding: 8px 46px 8px 20px
       position: relative
-      font-weight: normal
-      font-size: 14px
-      line-height: 17px
-      border: 1.5px solid $mischka
       margin-right: 34px
+      &-button
+         border: none
+         background-color: transparent
+         outline: none
+         opacity: .3
+         &--active
+            opacity: 1
+      &-btn-grid
+         margin-right: 10px
+      & .jq-selectbox__select
+         height: 33px
+         font-weight: normal
+         font-size: 14px
+         line-height: 17px
+         border: 1px solid #D7D9DF
+         padding: 8px 46px 8px 20px
+      & .jq-selectbox__dropdown 
+         top: 32px !important
+         width: 173px !important
+      &-arrow
+         &::before
+            content: ''
+            position: absolute
+            width: 12px
+            z-index: 2  
+            height: 8px
+            top: 12px
+            right: 17px
+            background-image: url('../img/filter-arrow-top.svg')
+            transform: rotate(-180deg)
       &:last-child
          &::after
             position: absolute
             width: 6px
             height: 11px
-      &-select
-         border: none
-         outline: none
-         padding: 8px 20px 8px 20px
-         min-width: 178px
+      //&-select
+            font-weight: normal
+            font-size: 14px
+            line-height: 17px
+            border: 1.5px solid #D7D9DF
+            padding: 8px 10px 8px 30px
    &__group
       margin-right: 10px
       fill: rgba($accent-text, .3)
@@ -47,6 +73,7 @@
    &__inner-list
       display: flex
       flex-wrap: wrap
+      margin-bottom: 70px
       & .product-prev__item
          margin: 0 30px 30px 0
          &:nth-child(3n+3)
